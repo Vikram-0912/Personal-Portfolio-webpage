@@ -1,0 +1,293 @@
+* {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 228);
+        font-size: 1.04rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+        align-items: center;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .buttons {
+        padding: 40px 0px;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background-color: rgb(64, 34, 154);
+        border-radius: 10px;
+        border: 2px solid white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+      .purple {
+        color: rgb(128, 39, 210);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(128, 39, 210);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 65vw;
+
+        height: 2px;
+        margin: 60px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 70px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+        background-color: #97756f;
+        padding: 5px;
+        border-radius: 520%;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        left: 1px;
+        font-size: 14px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 85px;
+        width: 150px;
+        font-size: 9px;
+        color: gray;
+      }
+      nav {
+        flex-direction: column;
+      }
+      footer {
+        background-color: rgb(15, 16, 68);
+        padding: 20px 0;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+        justify-content: space-evenly;
+        padding: 23px 122px;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer > div {
+        width: 223px;
+        margin-bottom: 20px; /* Add spacing between columns */
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+      .image-bottom {
+        width: 20px;
+        align-items: center;
+        position: relative;
+        left: -9px;
+        bottom: -2px;
+        border-radius: 10px;
+        background-color: aqua;
+      }
+      .footer-third > ul {
+        background-color: rgb(5, 14, 17);
+        color: rgb(158, 121, 10);
+        text-decoration: none;
+    
+      }
+      /* Chatbot Styles */
+#chatbot {
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  width: 300px;
+  background-color: #2e1414;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+}
+#chatbot-header {
+  background-color: rgb(64, 64, 93);
+  color: rgb(10, 2, 2);
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+#chatbot-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  background-color: rgb(136, 83, 83);
+}
+#chatbot-input {
+  display: flex;
+  padding: 10px;
+  background-color: #851e1e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#chatbot-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #0e0606;
+  border-radius: 5px;
+}
+#chatbot-input button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: rgb(18, 18, 62);
+  color: rgb(106, 42, 42);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.message.user {
+  text-align: right;
+  background-color: #144257;
+}
+.message.bot {
+  text-align: left;
+  background-color: #1e0a0a;
+}
+
+      @media screen and (max-width: 768px) {
+        .footer {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        .footer > div {
+          width: 100%; /* Full width on smaller screens */
+        }
+      }
+      @media screen and (max-width: 1400px) {
+        body {
+          /* background-color: red; */
+        }
+        .box {
+          flex-direction: column;
+        }
+        .secondSection .vertical {
+          height: unset;
+        }
+        .vertical-title,
+        .vertical-desc {
+          left: 45px;
+        }
+        .secondSection .box {
+          width: 50vw;
+        }
+        .firstsection {
+          flex-direction: column-reverse;
+        }
+        .leftsection {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .secondSection {
+          max-width: 80vw;
+          margin: auto;
+          height: 141vh;
+        }
+        .rightsection {
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightsection img {
+          width: 45%;
+          margin-bottom: 73px;
+        }
+        .secondSection {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        body {
+          min-width: fit-content;
+        }
+        .image-top {
+          top: 133px;
+        }
+        .footer-fourth > ul {
+          display: flex;
+          color: rgb(34, 101, 31);
+          align-items: center;
+          max-width: 227px;
+        }
+      }
+    
