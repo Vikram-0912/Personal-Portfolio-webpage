@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikram-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Vikram's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="/"> Services</a></li>
+            <li><a href="/"> Projects</a></li>
+            <li><a href="#" onclick="showContactInfo()"> Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div>Hi, My name is <span class="purple">Vikram Modasra</span></div>
+          <div>and I'm a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="resume.pdf" download>
+              <button class="btn">Download Resume</button>
+            </a>
+            <a href="https://github.com/your-username" target="_blank">
+              <button class="btn">Github</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="rightsection">
+          <img class="image" src="248.jpg" alt="error 504" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">what I've done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="developer4.png" alt="" />
+            <div class="vertical-title">Data Analyst</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              corrupti repudiandae, asperiores
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="Html.png" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              corrupti repudiandae, asperiores
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="c++.png" alt="" />
+            <div class="vertical-title">C++ programer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              corrupti repudiandae, asperiores
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="facebook.png" alt="" />
+            <div class="vertical-title">Python</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              corrupti repudiandae, asperiores
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Vikram's Developer Portfolio</h3>
+          <p>Passionate about building amazing web experiences.</p>
+        </div>
+
+        <div class="footer-third">
+          <h4>Contact Info</h4>
+          <ul>
+            <li>
+              <a
+                href="mailto:vikrammodasra145@gmail.com"
+                style="text-decoration: none; color: white"
+                >Email: vikrammodasra145@gmail.com</a
+              >
+            </li>
+            <li>Phone: +91 1234567890</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <h4>Follow Me On</h4>
+          <ul>
+            <li>
+              <img class="image-bottom" src="github.png" alt="" /><a
+                href="https://github.com/Vikram-0912"
+                target="_blank" aria-label="GitHub profile"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <img class="image-bottom" src="Linkedin.webp" alt="" />
+
+              <a
+                href="https://linkedin.com/in/vikram-modasra-b857a4261"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <img class="image-bottom" src="instagram.jpg" alt="" /><a
+                href="https://www.instagram.com/i_vikram.09"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <img class="image-bottom" src="facebook.png" alt="" />
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100089485543130"
+                target="_blank"
+                >facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; vikramportfolio.com | All rights reserved 2025
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Web Developer</i>",
+          "C++ programer",
+          "PowerBI Expert",
+          "Data Analyst",
+        ],
+        typeSpeed: 50,
+      });
+
+
+      // Function to display contact info
+      function showContactInfo() {
+        alert("Email: vikrammodasra145@gmail.com\nPhone: +91 1234567890");
+      }
+    </script>
+    <!-- Chatbot UI -->
+<div id="chatbot">
+    <div id="chatbot-header" onclick="toggleChatbot()">
+      Chat with Vikram's Portfolio Bot
+    </div>
+    <div id="chatbot-body">
+      <div class="message bot">Hi! I'm your portfolio assistant. Ask me anything about Vikram's skills, projects, or experience.</div>
+    </div>
+    <div id="chatbot-input">
+      <input type="text" id="user-input" placeholder="Type your question..." onkeypress="handleKeyPress(event)" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  
+  <!-- Toggle Chatbot Button -->
+  <button onclick="toggleChatbot()" style="position: fixed; font-size: 35px; bottom: 20px; right: 20px; padding: 10px; background-color: rgb(18, 18, 62); color: white; border: none; border-radius: 50%; cursor: pointer;">
+    💬
+  </button>
+  <script>
+  // Chatbot Logic
+  function toggleChatbot() {
+    const chatbot = document.getElementById('chatbot');
+    chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+  }
+  
+  function sendMessage() {
+    const userInput = document.getElementById('user-input').value.trim();
+    if (userInput === '') return;
+  
+    // Display user message
+    const chatbotBody = document.getElementById('chatbot-body');
+    const userMessage = document.createElement('div');
+    userMessage.className = 'message user';
+    userMessage.textContent = userInput;
+    chatbotBody.appendChild(userMessage);
+  
+    // Get bot response
+    const botResponse = getBotResponse(userInput);
+    const botMessage = document.createElement('div');
+    botMessage.className = 'message bot';
+    botMessage.textContent = botResponse;
+    chatbotBody.appendChild(botMessage);
+  
+    // Clear input and scroll to bottom
+    document.getElementById('user-input').value = '';
+    chatbotBody.scrollTop = chatbotBody.scrollHeight;
+  }
+  
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      sendMessage();
+    }
+  }
+  
+  function getBotResponse(userInput) {
+    const questions = {
+      'who are you': 'I am a chatbot designed to help you learn more about Vikram Modasra and his portfolio.',
+      'what skills do you have': 'Vikram is skilled in Web Development, Data Analysis, C++ Programming, and PowerBI.',
+      'tell me about your projects': 'Vikram has worked on various projects including web development, data analysis, and automation using Python.',
+      'how can i contact you': 'You can contact Vikram via email at vikrammodasra145@gmail.com or phone at +91 1234567890.',
+      'what is your experience': 'Vikram has experience as a Data Analyst, HTML Developer, and C++ Programmer.',
+      'github': 'You can find Vikram\'s GitHub profile here: https://github.com/Vikram-0912',
+      'linkedin': 'You can find Vikram\'s LinkedIn profile here: https://linkedin.com/in/vikram-modasra-b857a4261',
+      'instagram': 'You can find Vikram\'s Instagram profile here: https://www.instagram.com/i_vikram.09',
+      'facebook': 'You can find Vikram\'s Facebook profile here: https://www.facebook.com/profile.php?id=100089485543130',
+    };
+  
+    userInput = userInput.toLowerCase();
+    for (const [question, answer] of Object.entries(questions)) {
+      if (userInput.includes(question)) {
+        return answer;
+      }
+    }
+  
+    return "I'm sorry, I don't understand that question. Please ask something about Vikram's portfolio.";
+  }
+  </script>
+  </body>
+</html>
