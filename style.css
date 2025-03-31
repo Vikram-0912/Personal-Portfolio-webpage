@@ -157,7 +157,7 @@
       .footer-third > ul {
         background-color: rgb(5, 14, 17);
         color: rgb(158, 121, 10);
-        text-decoration: none;
+
     
       }
       /* Chatbot Styles */
@@ -288,6 +288,7 @@
           color: rgb(34, 101, 31);
           align-items: center;
           max-width: 227px;
+                
         }
       }
     
